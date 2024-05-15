@@ -31,7 +31,7 @@ const TopNavHeaderInput = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative w-[14.7rem]  border-1 border-black  "
+      className="relative mx-4  md:w-[14.7rem] border-[0.5px] border-gray-500 rounded-md  "
     >
       <input
         type="text"
@@ -44,12 +44,12 @@ const TopNavHeaderInput = () => {
           }
         }}
         onFocus={() => setShowBtn(true)}
-        className="py-1 px-4 text-sm  border rounded-md w-full focus:outline-none text-gray-700 placeholder-gray-800   "
+        className="py-1 md:px-4 px-2 text-[10px] md:text-sm    md:w-full focus:outline-none text-gray-700 placeholder-gray-800   "
       />
       {showBtn && (
         <button
           type="submit"
-          className="absolute inset-y-0 text-white font-extrabold right-0 px-4 py-2 bg-blue-500 focus:outline-none rounded-r-md  "
+          className="absolute inset-y-0 text-white font-extrabold right-0 px-3 md:px-4 md:py-2 bg-blue-500 focus:outline-none rounded-r-md  "
         >
           <FaAngleRight />
         </button>

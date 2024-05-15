@@ -2,4 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
- 
+/* .ant-dropdown-menu {
+  padding: 30px 10px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+} */
+
+:where(.css-dev-only-do-not-override-n0gjrg).ant-drawer .ant-drawer-body {
+  padding: 0px;
+}
+
+:where(.css-dev-only-do-not-override-n0gjrg).ant-drawer .ant-drawer-header {
+  border-bottom: 2px solid #e87f36;
+  /* border-color: #e87f36; */
+}

@@ -1,25 +1,27 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import { FaCarAlt } from "react-icons/fa";
-import { FaCar } from "react-icons/fa6";
+import React from "react";
+
 import PurchaseButtonwithDropdown from "./PurchaseButtonwithDropdown";
 import OrderButtonWithDropdown from "./OrderButtonWithDropdown";
+import UserDropdown from "./UserDropdown";
+
+// icons
+import { FiMenu } from "react-icons/fi";
+import MobileNavDrawer from "./MobileNavDrawer";
+import Logo from "./Logo";
 
 const DeskMiddleNavbar = () => {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto flex items-center justify-between py-2 px-5 ">
       <div className="flex items-center gap-10">
-        <div className="relative">
-          <div className="flex ite">
-            <h2 className="  text-2xl  font-bold text-white bg-[#304f95] flex  px-2 py-1">
-              logo here
-            </h2>
-          </div>
+        {/* logo */}
+        <div>
+          <Logo />
         </div>
 
         {/* purchase dropdown and order dropdown */}
-        <div className="flex gap-1 items-center">
+        <div className="md:flex gap-1 items-center hidden ">
           <div>
             <PurchaseButtonwithDropdown />
           </div>
@@ -29,8 +31,13 @@ const DeskMiddleNavbar = () => {
         </div>
       </div>
       {/* dorpdown */}
-      <div>
-
+      <div className="flex items-center  gap-3">
+        <div>
+          <UserDropdown />
+        </div>
+        <div>
+          <MobileNavDrawer />
+        </div>
       </div>
     </div>
   );
