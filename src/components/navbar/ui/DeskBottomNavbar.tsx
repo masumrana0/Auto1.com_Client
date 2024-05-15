@@ -30,7 +30,7 @@ const DeskBottomNavbar = () => {
         </section>
 
         <section className="mt-5 md:mt-0">
-          <button className="font-semibold  text-white px-4 py-2 bg-[#e87f36] text-sm md:text-md ">
+          <button className="font-semibold  text-white px-4 py-2 bg-[#e87f36] text-sm  ">
             UPLOAD YOUR COMPANY DOCUMENTS
           </button>
         </section>
