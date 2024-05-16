@@ -2,22 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface IinitialState {
-  post: string;
+  headerModalOpen: boolean;
 }
 
 const initialState: IinitialState = {
-  post: "",
+  headerModalOpen: false,
 };
 
 export const utilitySlice = createSlice({
   name: "utilitySlice",
   initialState,
   reducers: {
-    setPostId: (state, action: PayloadAction<string>) => {
-      state.post = action.payload;
+    setHeaderModalOpen: (state) => {
+      state.headerModalOpen = !state.headerModalOpen;
     },
   },
 });
 
-export const { setPostId } = utilitySlice.actions;
+export const { setHeaderModalOpen } = utilitySlice.actions;
 export default utilitySlice.reducer;

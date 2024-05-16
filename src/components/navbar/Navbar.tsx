@@ -5,7 +5,7 @@ import DeskMiddleNavbar from "./ui/DeskMiddleNavbar";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="mb-7">
       <DeskTopNavbar />
       <DeskMiddleNavbar />
       <DeskBottomNavbar />

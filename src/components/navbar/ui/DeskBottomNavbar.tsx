@@ -1,6 +1,12 @@
+"use client";
+
+import { setHeaderModalOpen } from "@/Redux/Slices/unitlitySlice";
+import { useAppDispatch } from "@/Redux/hooks";
 import React from "react";
+import HeaderModal from "./HeaderModal";
 
 const DeskBottomNavbar = () => {
+  const dispatch = useAppDispatch();
   return (
     <div className="bg-[#314f8f] w-full py-5 px-3 md:px-0 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center  justify-center md:justify-between  ">
@@ -30,9 +36,7 @@ const DeskBottomNavbar = () => {
         </section>
 
         <section className="mt-5 md:mt-0">
-          <button className="font-semibold  text-white px-4 py-2 bg-[#e87f36] text-sm  ">
-            UPLOAD YOUR COMPANY DOCUMENTS
-          </button>
+          <HeaderModal></HeaderModal>
         </section>
       </div>
     </div>
